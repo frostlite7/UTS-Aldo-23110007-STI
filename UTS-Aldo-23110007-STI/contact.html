@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Personal Profile</title>
+    <style>
+        .hero-image {
+            background-image: url(assets/hero-contact.jpg);
+        }
+
+        .hero-text {
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            color: white;
+        }
+
+        .wrapper {
+            grid-column: 2 / span 5;
+        }
+
+        .wrapper h4,
+        h6 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .wrapper .heading,
+        .email,
+        .socials {
+            margin-bottom: 4rem;
+        }
+
+        .wrapper p,
+        a {
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .forms {
+            grid-column: 7 / span 5;
+        }
+
+        @media only screen and (max-width: 1080px) {
+
+            .wrapper {
+                grid-column: 1 / span 12;
+                margin-bottom: 4rem;
+            }
+
+            .forms {
+                grid-column: 1 / span 12;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.svg" alt="logo" />
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </nav>
+    <div class="menubar">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h2>CONTACT.</h2>
+        </div>
+    </div>
+    <section>
+        <div class="wrapper">
+            <div class="heading">
+                <h4>Let's Talk</h4>
+                <p class="normal-text">Have some big idea or brand to develop and need help? Then reach out i'd love to
+                    hear about your project and provide help</p>
+            </div>
+            <div class="email">
+                <h6>Email</h6>
+                <a href="#" class="normal-text">
+                    aldo.rivaldi@itbss.ac.id
+                </a>
+            </div>
+            <ul class="socials">
+                <li><a class="normal-text" href="#">Instagram</a></li>
+                <li><a class="normal-text" href="#">Twitter</a></li>
+                <li><a class="normal-text" href="#">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="forms">
+            <form action="" enctype="multipart/form-data">
+                <label class="normal-text-bold" for="name">Name:</label>
+                <input type="text" name="name" />
+                <br />
+                <label class="normal-text-bold" for="email">Email:</label>
+                <input type="email" name="email" />
+                <br />
+                <label class="normal-text-bold" for="message">Message:</label>
+                <textarea name="message"></textarea>
+                <br />
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

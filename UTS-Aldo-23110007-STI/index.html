@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Personal Profile</title>
+    <style>
+        .hero-image {
+            background-image: url(assets/hero-image.jpg);
+        }
+
+        .hero-text {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: end;
+            padding-bottom: 4rem;
+            color: var(--white);
+            text-align: right;
+        }
+
+        .profile-img {
+            grid-column: 1 / span 6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-img img {
+            width: 50%;
+        }
+
+        .bio {
+            grid-column: 7 / span 6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .bio h6 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .bio .wraper {
+            display: flex;
+        }
+
+        .bio ul {
+            margin-right: 4rem;
+        }
+
+        .bio ul li {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        @media only screen and (max-width: 1080px) {
+
+            .hero-text h5 {
+                font-size: 26pt;
+                font-weight: 600;
+                line-height: 28.6pt;
+            }
+
+            .hero-text h6 {
+                font-size: 16pt;
+                font-weight: 700;
+                line-height: 22.4pt;
+            }
+
+            .hero-text h3 {
+                font-size: 68pt;
+                font-weight: 900;
+                line-height: 74.8pt;
+            }
+
+            .profile-img {
+                grid-column: 1 / span 12;
+                justify-content: start;
+                margin-bottom: 4rem;
+                padding: 3rem;
+            }
+
+            .profile-img img {
+                width: 50%;
+            }
+
+            .bio {
+                grid-column: 1 / span 12;
+                padding: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.svg" alt="logo" />
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </nav>
+    <div class="menubar">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About Me</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h5>My Name's</h5>
+            <h3>Aldo Rivaldi</h3>
+            <h6>creator, filmmaker, investor</h6>
+        </div>
+    </div>
+    <section>
+        <div class="profile-img">
+            <img src="assets/portrait.jpg" alt="">
+        </div>
+        <div class="bio">
+            <h6>My Profile</h6>
+            <div class=" wraper">
+                <ul>
+                    <li class="normal-text">Fullname</li>
+                    <li class="normal-text">Gender</li>
+                    <li class="normal-text">Job Title</li>
+                    <li class="normal-text">Phone Number</li>
+                    <li class="normal-text">Date of Birth</li>
+                    <li class="normal-text">Country</li>
+                    <li class="normal-text">Address Street</li>
+                    <li class="normal-text">Address City</li>
+                    <li class="normal-text">Address</li>
+                    <li class="normal-text">Zodiac Sign</li>
+                </ul>
+                <ul>
+                    <li class="normal-text">Aldo Rivaldi</li>
+                    <li class="normal-text">Male</li>
+                    <li class="normal-text">Global Applications Producer</li>
+                    <li class="normal-text">(219) 591-7476 x0481</li>
+                    <li class="normal-text">24/3/15</li>
+                    <li class="normal-text">China</li>
+                    <li class="normal-text">683 Mylene Flat</li>
+                    <li class="normal-text">Hanford</li>
+                    <li class="normal-text">683 Mylene Flat, Hanford 71683</li>
+                    <li class="normal-text">Virgo</li>
+                </ul>
+            </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

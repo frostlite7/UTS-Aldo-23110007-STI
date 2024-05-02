@@ -1,0 +1,365 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+  font-size: 287pt;
+  font-weight: 900;
+  line-height: 315.7pt;
+}
+h2{
+    font-size: 177pt;
+  font-weight: 900;
+  line-height: 194.7pt;
+}
+h3 {
+    font-size: 110pt;
+  font-weight: 900;
+  line-height: 121pt;
+}
+h4 {
+    font-size: 68pt;
+  font-weight: 900;
+  line-height: 74.8pt;
+}
+h5 {
+    font-size: 42pt;
+  font-weight: 700;
+  line-height: 46.2pt;
+}
+h6 {
+    font-size: 26pt;
+  font-weight: 600;
+  line-height: 28.6pt;
+}
+.normal-text {
+    font-size: 16pt;
+  font-weight: 400;
+  line-height: 22.4pt;
+}
+.normal-text-bold {
+    font-size: 16pt;
+  font-weight: 700;
+  line-height: 22.4pt;
+}
+.small-text {
+    font-size: 10pt;
+  font-weight: 400;
+  line-height: 14pt;
+}
+.tiny-text {
+    font-size: 6pt;
+  font-weight: 400;
+  line-height: 8.4pt;
+}
+
+:root {
+    --primary: #1D3461;
+    --grey: #f7f7f7;
+    --text-color: #696969;
+    --white: #ffffff;
+  }
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100vw;
+    display:  grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+    padding: 6rem;
+    margin-bottom: 3rem;
+}
+
+/* HEADER */
+.hero-image {
+    width: 100vw;
+    height: 80vh;
+    padding: 0 6rem;
+    margin-bottom: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+  height: 100%;
+    width: 100%;
+}
+
+/* NAVBAR */
+nav {
+  width: 100vw;
+  height: auto;
+  padding: 3rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  top: 0;
+  position: fixed;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  height: 25px;
+  width: auto;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 95%;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #f5f5f550;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 1px;
+  background-color: var(--white);
+  display: block;
+  margin: 7px auto;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger-active {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.6s;
+  transform: rotate(45deg);
+}
+
+.hamburger-active .line:nth-child(2) {
+  width: 0px;
+}
+
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.hamburger-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+
+.hamburger-active .line:nth-child(3) {
+  transform: translateY(-5px) rotate(90deg);
+}
+
+.menubar {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+  height: 100vh;
+  padding: 20% 0;
+  background: rgba(255, 255, 255);
+  transition: all 0.5s ease-in;
+  z-index: 2;
+}
+.active {
+  left: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.menubar ul {
+  padding: 0;
+  list-style: none;
+}
+.menubar ul li {
+  margin-bottom: 32px;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 95%;
+  font-weight: 400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menubar ul li a:hover {
+  background-color: var(--grey);
+}
+
+nav.scrolled {
+  background-color: var(--white);
+}
+nav.scrolled .hamburger .line {
+  background-color: var(--primary);
+}
+nav.scrolled ul li a {
+  color: #000;
+}
+nav.scrolled .logo {
+  filter: invert(1);
+}
+nav.scrolled nav ul li a:hover{
+  background-color: var(--grey);
+}
+nav.scrolled .menubar ul li a:hover {
+  background-color: var(--grey);
+}
+
+article {
+  margin-bottom: 6rem;
+}
+
+article .header {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+article .content-img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+article p {
+    color: var(--text-color);
+}
+.button {
+    display: inline-block;
+    background-color: var(--primary);
+    padding: 16pt 44pt;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.button:hover {
+    background-color: #102040;
+    padding: 16pt 44pt;
+    margin-top: 2rem;
+}
+
+.card {
+    width: auto;
+}
+.card img {
+    width: 100%;
+    display: table;
+    margin-bottom: 2rem;
+}
+.card .card-header {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+.card .card-text {
+    color: var(--text-color);
+}
+
+.list li {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  height: 46pt;
+  outline: none;
+  margin-bottom: 2rem;
+  background-color: var(--grey);
+  border: none;
+  padding: 0 1.5rem;
+  font-size: 16pt;
+  font-weight: 400;
+  line-height: 22.4pt;
+  color: var(--text-color);
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  outline: none;
+  margin-bottom: 2rem;
+  background-color: var(--grey);
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 16pt;
+  font-weight: 400;
+  line-height: 22.4pt;
+  color: var(--text-color);
+}
+
+button {
+  width: 100%;
+  display: inline-block;
+    background-color: var(--primary);
+    padding: 16pt 44pt;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 16pt;
+  font-weight: 700;
+  line-height: 22.4pt;
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 1080px) {
+  nav .nav-items {
+    grid-column: 1 / span 12;
+}
+  .hero-text h2 {
+    font-size: 68pt;
+  font-weight: 900;
+  line-height: 74.8pt;
+  }
+  section {
+    padding: 3rem 0;
+    margin-bottom: 0;
+  }
+  article {
+    grid-column: 1 / span 12;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+

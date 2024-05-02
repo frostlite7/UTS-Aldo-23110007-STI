@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Personal Profile</title>
+</head>
+<style>
+    .hero-image {
+        background-image: url(../assets/hero-itbss.jpg);
+    }
+
+    .hero-text {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        color: white;
+    }
+
+    #logo-itbss {
+        width: 50%;
+    }
+
+    article {
+        grid-column: 3 / span 8;
+    }
+
+    .prodis {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .prodis a {
+        width: 100%;
+        text-decoration: none;
+        background-color: var(--grey);
+        color: var(--primary);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+        gap: 16pt;
+    }
+
+    .prodis a img:first-child {
+        width: 48pt;
+    }
+
+    .prodis a img:last-child {
+        width: 28pt;
+    }
+
+
+    .prodis a:hover {
+        background-color: var(--primary);
+        color: white;
+        transition: .2s;
+    }
+
+    .prodis a:hover img {
+        -webkit-filter: brightness(0) invert(1);
+        filter: brightness(0) invert(1);
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.svg" alt="logo" />
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../about.html">About Me</a>
+            </li>
+            <li>
+                <a href="../gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="../contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </nav>
+    <div class="menubar">
+        <ul>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../about.html">About Me</a>
+            </li>
+            <li>
+                <a href="../gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="../contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h2>ITBSS.</h2>
+        </div>
+    </div>
+    <section>
+        <article>
+            <img id="logo-itbss" src="../assets/logo-itbss.jpg" alt="">
+            <p class="content normal-text">We bring a renewal, the best standard of a Technology and Business Institute
+                in Pontianak, West Kalimantan, with a noble vision and mission, moving forward for the progress of the
+                nation's children through the Sabda Setia Institute of Technology and Business. <br><br>
+
+                The Sabda Setia Institute of Technology and Business was founded in 2021 to encourage the nation's
+                progress to the global level. With the spirit of renewal in our vision and mission, ITBSS offers broad
+                access to various career opportunities. As an institute that brings new standards, ITBSS dares to
+                develop to become the best in its field.</p>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h6 class="header">History</h6>
+            <p class="content normal-text">Driven by a strong desire and desire to participate in the process of
+                national intelligence and is a continuation of the secondary education level which has been organized by
+                the Kampung Bali Protestant Church Foundation (YGPKB), which is an extension of the service mandated by
+                the West Kalimantan Christian Church (GKKB) Pontianak Congregation in in the field of education, and
+                with the spirit of nationalism and Indonesian unity on October 13 2019, the Higher Education Compartment
+                (KomDikti) was formed by YGPKB Pontianak with the aim of being the organizer of establishing higher
+                education called the Sabda Setia Institute of Technology and Business (ITBSS).</p>
+        </article>
+        <article>
+            <h6 class="header">Study Program</h6>
+            <img class="content-img" src="../assets/study-program.jpg" alt="">
+            <div class="prodis">
+                <a href="prodi/sti.html" target="_blank">
+                    <img src="../assets/cpu.svg" alt="">
+                    <p class="normal-text-bold">Information Systems<br>and Technology</p>
+                    <img src="../assets/arrow-right.svg" alt="">
+                </a>
+                <a href="prodi/bd.html" target="_blank">
+                    <img src="../assets/presention-chart.svg" alt="">
+                    <p class="normal-text-bold">Digital Business</p>
+                    <img src="../assets/arrow-right.svg" alt="">
+                </a>
+                <a href="prodi/kwu.html" target="_blank">
+                    <img src="../assets/chart.svg" alt="">
+                    <p class="normal-text-bold">Entrepreneurship</p>
+                    <img src="../assets/arrow-right.svg" alt="">
+                </a>
+            </div>
+        </article>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
